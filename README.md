@@ -1,2 +1,2 @@
 # DROP-Climbing-shop
-Simple prototype for a Climbing Shop website
+Simple mockup for a Climbing Shop website
