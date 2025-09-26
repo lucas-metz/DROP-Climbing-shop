@@ -1,0 +1,136 @@
+/* Defining variables for the whole page */
+:root {
+    --main-color: #EF7A2F;
+    --alt-color: #ee9f6e;
+    --second-color: rgb(175, 175, 175);
+}
+
+/* Font setup */
+html {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* To keep the header while scrolling */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.header__title {
+    background-color: var(--main-color);
+    padding: 1rem;
+
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.header__smalltitle {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.header__subtitle {
+    background-color: var(--second-color);
+    padding: 0.5rem;
+
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--second-color);
+    padding: 0.3rem;
+
+    color: white;
+    font-size: 1.0rem;
+    text-align: center;
+}
+
+
+.articles-container {
+    margin: 2rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.item {
+    width: 30%;
+    position: relative;
+    border: 1px solid var(--alt-color);
+    border-radius: 5px;
+}
+
+.item__heart {
+    width: 2rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 3%;
+}
+
+.item__img {
+    max-width: 100%;
+}
+
+/* item category */
+.item__cat {
+    color: var(--alt-color);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+
+    padding-bottom: 0.2rem;
+    margin: 0.5rem 1rem;
+    border-bottom: 1px solid var(--alt-color);
+}
+
+.item__name {
+    font-size: 1.6rem;
+    font-weight: bold;
+
+    margin : 0 1rem 0.5rem 1rem;
+}
+
+.item__desc {
+    margin: 1rem 1rem;
+    height: 3rem;
+}
+
+/* Bottom part of each article */
+.item__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.item__btn {
+    background-color: var(--main-color);
+    width: 1.7rem;
+    height: 1.7rem;
+    padding: 0.5rem 0.5rem 0.3rem 0.4rem;
+    margin-right: 0.5rem;
+    border-radius: 5px;;
+}
+
+.item__price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.item__cart-img {
+    filter: invert(1);
+}
